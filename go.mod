@@ -3,14 +3,16 @@ module myapp
 go 1.17
 
 require (
+	github.com/CloudyKit/jet/v6 v6.1.0
 	github.com/dfolland/celeritas v1.1.0
 	github.com/go-chi/chi/v5 v5.0.4
+	github.com/justinas/nosurf v1.1.1
 	github.com/upper/db/v4 v4.2.1
+	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
 )
 
 require (
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect
-	github.com/CloudyKit/jet/v6 v6.1.0 // indirect
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/SparkPost/gosparkpost v0.2.0 // indirect
 	github.com/ainsleyclark/go-mail v1.0.3 // indirect
@@ -20,6 +22,7 @@ require (
 	github.com/alexedwards/scs/v2 v2.4.0 // indirect
 	github.com/andybalholm/cascadia v1.1.0 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
+	github.com/bwmarrin/go-alone v0.0.0-20190806015146-742bb55d1631 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
 	github.com/dgraph-io/badger/v3 v3.2103.1 // indirect
@@ -49,7 +52,6 @@ require (
 	github.com/jackc/pgx/v4 v4.13.0 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/justinas/nosurf v1.1.1 // indirect
 	github.com/klauspost/compress v1.12.3 // indirect
 	github.com/lib/pq v1.10.2 // indirect
 	github.com/mailgun/mailgun-go/v4 v4.5.3 // indirect
@@ -63,7 +65,6 @@ require (
 	github.com/vanng822/go-premailer v1.20.1 // indirect
 	github.com/xhit/go-simple-mail/v2 v2.10.0 // indirect
 	go.opencensus.io v0.22.5 // indirect
-	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
 	golang.org/x/net v0.0.0-20210928044308-7d9f5e0b762b // indirect
 	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22 // indirect
 	golang.org/x/text v0.3.6 // indirect

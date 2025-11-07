@@ -17,6 +17,18 @@ clean:
 	@go clean
 	@echo Cleaned!
 
+start_compose:
+	docker-compose up -d
+	@echo "Also starting redis"
+	@open ~/Sites/Terminals/Ocean_Redis.terminal && open ~/Sites/Terminals/Homebrew_Redis.terminal
+	@echo "And starting MailHog"
+	@open ~/Sites/Terminals/Homebrew_MailHog.terminal
+
+stop_compose:
+	docker-compose down
+	@echo "Also shutting down redis"
+	@redis-cli shutdown
+
 test:
 	@echo Testing...
 	@go test ./...
@@ -30,3 +42,17 @@ stop:
 	@echo Stopped Celeritas
 
 restart: stop start
+
+help:
+	@echo "Here are the make commands..."
+	@echo "Make build"
+	@echo "Make run"
+	@echo "Make clean"
+	@echo "Make start_compose"
+	@echo "Make stop_compose"
+	@echo "Make test"
+	@echo "Make start"
+	@echo "Make stop"
+	@echo "Make restart"
+	@echo "Make help"
+	

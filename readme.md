@@ -1,1 +1,1 @@
-# Celeritas skeleton application
+# Celeritas full application
